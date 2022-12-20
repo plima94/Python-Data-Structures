@@ -9,9 +9,11 @@ class Queue:
         return not self.items
         # return len(self.items) == 0
 
+    # add item to queue
     def enqueue(self, item):
         self.items.append(item)
 
+    # pop item from tail
     def dequeue(self):
         return self.items.popleft()
 
